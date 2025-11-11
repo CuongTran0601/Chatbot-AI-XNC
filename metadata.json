@@ -1,0 +1,5 @@
+{
+  "name": "Trợ lý ảo tư vấn XNC Công an TP.HCM",
+  "description": "Một ứng dụng chatbot thông minh cung cấp thông tin chính xác và chính quy về các thủ tục xuất nhập cảnh tại Thành phố Hồ Chí Minh, dựa trên nền tảng Gemini API.",
+  "requestFramePermissions": []
+}

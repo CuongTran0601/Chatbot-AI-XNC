@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trợ lý ảo XNC Công an TP.HCM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
+  }
+}
+</script>
+<style>
+    /* ================================================= */
+    /* 1. THIẾT LẬP MẶC ĐỊNH (Áp dụng cho MÁY TÍNH & màn hình lớn) */
+    /* ================================================= */
+    body {
+        /* Link ảnh nền cho PC */
+        background-image: url('https://cdn-media.sforum.vn/storage/app/media/mylinh/hinh-nen-powerpoint-trong-dong-hoa-sen-15.jpg');
+        
+        /* Các thuộc tính cần thiết để căn chỉnh và phủ kín */
+        background-size: cover;          
+        background-repeat: no-repeat;    
+        background-attachment: fixed;    
+        background-position: center center;
+        
+        /* Dịch chuyển lên trên 50px */
+        background-position-y: -50px; 
+        
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ================================================= */
+    /* 2. MEDIA QUERY (Áp dụng cho ĐIỆN THOẠI - Max width 768px) */
+    /* ================================================= */
+    @media screen and (max-width: 768px) {
+        body {
+            /* Link ảnh Vsmart cho Điện thoại */
+            background-image: url('https://i.pinimg.com/736x/65/6a/5f/656a5ffbaff106639432ba21996254e1.jpg'); 
+            
+            /* Reset lại vị trí để căn giữa hoàn toàn, vì ảnh điện thoại có thể có bố cục khác */
+            background-position: center center; 
+            
+            /* Có thể đổi attachment thành 'scroll' nếu ảnh mobile có tỷ lệ khác */
+            background-attachment: scroll; 
+            background-size: cover;
+        }
+    }
+</style>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
