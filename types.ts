@@ -9,3 +9,9 @@ export interface Message {
   role: MessageRole;
   content: string;
 }
+
+export interface ChatSession {
+  id: string;
+  timestamp: number;
+  messages: Message[];
+}
